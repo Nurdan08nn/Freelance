@@ -12,7 +12,7 @@ urlpatterns = [
     path('login/', CustomLoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
     path('', include(router.urls)),
-    path('course/', ProjectListAPIView.as_view(), name='course_list'),
-    path('course/<int:pk>', ProjectDetailAPIView.as_view(), name='course_detail'),
+    path('project/', ProjectListAPIView.as_view(), name='project_list'),
+    path('project/<int:pk>', ProjectDetailAPIView.as_view(), name='project_detail'),
 ]
 
